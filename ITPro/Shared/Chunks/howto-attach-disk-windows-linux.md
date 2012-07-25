@@ -136,10 +136,6 @@ The data disk that you just attached to the virtual machine is offline and not i
 
 	`sudo fdisk /dev/sdc`
 
-3. In the SSH window, type the following command to create a new device, and then enter the account password:
-
-	`sudo fdisk /dev/sdc`
-
 4. Type **n** to create a new partition.
 
 	![Create new device][Create new device]
