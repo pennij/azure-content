@@ -62,7 +62,7 @@ With Windows Azure, you can host the controller and agent processes in different
 The major components are:
 
 - **Agents**: Using worker roles you take advantage of the elastic nature of Windows Azure compute instances to scale out the agents and generate the required load more easily.  
-- **Controller**: The controller must communicate with the different agents in the rig. It starts and stops the tests in the different agents, tracks agent status and collects test results. It also collects performance data from the agents and the system being tested. You can use either a worker role or an on on-premise computer that communicates with the worker roles using Windows Azure Connect. For information on determining which configuration works best, see [Running Load Tests In Mixed Environments]. 
+- **Controller**: The controller must communicate with the different agents in the rig. It starts and stops the tests in the different agents, tracks agent status and collects test results. It also collects performance data from the agents and the system being tested. You can use either a worker role or an on on-premise computer that communicates with the worker roles using Windows Azure Connect.  
 - **Windows Azure Connect**: The Windows Azure Connect endpoint software must be active on all Azure instances and on the Controller machine as well. This allows IP connectivity between them and, given that the firewall is properly configured, allows the Controller to send workloads to the agents. In parallel, and using the LAN, the Controller will collect the performance data on the stressed systems, using the traditional WMI mechanisms. 
 
 The following diagram shows how applying the Windows Azure features to the test rig facilitates your implementation.
